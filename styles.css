@@ -121,7 +121,7 @@ header .navbar {
 }
 
 .navbar :where(#menu-close-button, #menu-open-button) {
-    display: none;;
+    display: none;
 }
 
 /* Hero section styling */
@@ -242,6 +242,80 @@ max-width: 50%;
     color: var(--secondary-color);
 }
 
+/* Destinations styling */
+.destinations-section {
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+
+.destinations-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.destinations-section .destination {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-title {
+    text-align: center;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.location-title::after {
+    content: "";
+    width: 30px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color); 
+}
+
+
+.destinations-section .destination .user-image {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 50px;
+    border-radius: var(--border-radius-square);    
+}
+
+
+.destinations-section .destination .name {
+    font-size: var(--font-size-l);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+    margin-bottom: 16px;
+}
+
+.destinations-section .destination .feedback {
+line-height: 25px;
+}
+
+.destinations-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color)
+}
+
+.destinations-section .swiper-slide-button {
+    margin-top: -50px;
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+.destinations-section .swiper-slide-button:hover {
+    color: var(--primary-color);
+}
+
 /* Responsive styling */
 @media screen and (max-width: 900px) {
     :root {
@@ -337,4 +411,15 @@ max-width: 50%;
     }
 }
 
+@media screen and (max-width: 640px) {
+
+    .destinations-section .slider-wrapper  {
+        margin: 0 0 30px;
+    }
+
+    .destinations-section .swiper-slide-button {
+        display: none;
+    }
+
+}
 

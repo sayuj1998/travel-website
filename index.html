@@ -6,6 +6,8 @@
     <title>Wandering</title>
     <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body> 
@@ -70,7 +72,7 @@
                 </div>
                 <div class="about-details">
                     <h2 class="section-title">About Us</h2>
-                    <p class="text">Insert about us text here!!
+                    <p class="text">Hey! We are Sayuj and Hailey. We met online, quickly realized we had something special, and have been building memories ever since. From cities to coastlines, trying new foods to discovering hidden gems, we've found that exploring the world together is one of the things we love most. This site is where we keep all of that - the trips we've taken, the places we've fallen in love with, and everything that made the journey special. As wel continue, both personally and professionally, we hope to visit every corner of the world - one destination at a time. 
                     </p>
                     <div class="social-link-list">
                         <a href="https://www.instagram.com/ruehleee/" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -78,9 +80,55 @@
                         <a href="https://www.linkedin.com/in/sayujs/" class="social-link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>                            
                     </div>
                 </div>
-         </section>            
+         </section>     
+         
+        <!-- Destinations Section -->
+         <section class="destinations-section">
+            <h2 class ="section-title">Destinations</h2>
+            <div class="section-content">
+                <div class="slider-contrainer swiper">
+                    <div class="slider-wrapper">
+                        <ul class="destinations-list swiper-wrapper">
+
+                            <li class="destination swiper-slide">
+                                <img src="images/chicago_1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Our First Date</h3>
+                                <i class="feedback">We went to Weber's Grill in Chicago for a cozy dinner. Afterward, we took this photo at the park nearby. A simple night, but one we’ll always remember. </i>
+                            </li>
+
+                            <li class="destination swiper-slide">
+                                <img src="images/chicago_2.jpg" alt="User" class="user-image">
+                                <h3 class="name">Our First Breakfast</h3>
+                                <i class="feedback">We took Hailey's parents out for breakfast — the first time both sides sat down together. Over skillets and coffee, I got to properly introduce myself, share a bit more about who I am, and somehow it all felt easier than expected.</i>
+                            </li>
+
+                            <li class="destination swiper-slide">
+                                <img src="images/chicago_3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Target Run</h3>
+                                <i class="feedback">It wasn’t a fancy trip or a big plan — just us, grabbing snacks and drinks at Target, turning a simple errand into something that felt like a date. </i>
+                            </li>
+
+                            <li class="destination swiper-slide">
+                                <img src="images/chicago_4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Her Moment</h3>
+                                <i class="feedback">Post-dinner glow, dress and all, just had to capture the moment. </i>
+                            </li>
+                            
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>           
      </main>
 
+     <!-- Linking Swiper script -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Linking custom script -->
      <script src="script.js"></script>
 </body>
 </html>
