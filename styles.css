@@ -11,7 +11,7 @@
   /* Colors */
   --white-color: #fff;
   --dark-color: #252525;
-  --primary-color: #3b141c;
+  --primary-color: #1c0738;
   --secondary-color: #f3961c;
   --light-pink-color: #faf4f5;
   --medium-gray-color: #ccc;
@@ -268,7 +268,24 @@ max-width: 50%;
     margin-bottom: 10px;
 }
 
+.location-title-colorado {
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
 .location-title::after {
+    content: "";
+    width: 30px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color); 
+}
+
+.location-title-colorado::after {
     content: "";
     width: 30px;
     height: 5px;
