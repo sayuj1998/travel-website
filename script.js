@@ -42,28 +42,3 @@ const swiper = new Swiper('.slider-wrapper', {
     
   }
 });
-
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // Stop default form submission
-
-  const form = e.target;
-
-  fetch(form.action, {
-    method: form.method,
-    body: new FormData(form),
-    headers: {
-      Accept: "application/json"
-    }
-  })
-  .then(response => {
-    if (response.ok) {
-      form.reset();
-      document.getElementById("form-success").style.display = "block";
-    } else {
-      alert("There was a problem submitting the form.");
-    }
-  })
-  .catch(() => {
-    alert("There was a problem submitting the form.");
-  });
-});
