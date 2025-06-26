@@ -44,7 +44,7 @@ const swiper = new Swiper('.slider-wrapper', {
 });
 
 document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // prevent default submit behavior
+  e.preventDefault(); // Stop default form submission
 
   const form = e.target;
 
@@ -67,4 +67,3 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     alert("There was a problem submitting the form.");
   });
 });
-
