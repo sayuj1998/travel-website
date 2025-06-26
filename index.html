@@ -344,14 +344,17 @@
                     <input type="text" name="name" placeholder="Your name" class="form-input" required>
                     <input type="email" name="email" placeholder="Your email" class="form-input" required>
                     <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
+
                     <input type="hidden" name="_subject" value="Message From Wandering">
 
                     <!-- Spam filter -->
                     <input type="text" name="_gotcha" style="display:none">
 
                     <!-- Custom email subject -->
-                    <button class="button submit-button">Submit</button>
+                    <button type="submit" class="button submit-button">Submit</button>
                 </form>
+
+                <div id="form-success" style="display:none; color: var(--secondary-color); text-align: center; margin-top: 10px;">Thanks! Your message has been sent.</div>
             </div>
         </section>
 
